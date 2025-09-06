@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background: black;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: black;
+      color: gold;
+      border: 2px solid gold;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2em;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 60px 20px;
+      background: #eee;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+      background: black;
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.2em;
+    }
+
+    footer {
+      padding: 20px;
+      background: #222;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>FASHIONISTA</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Style Meets Elegance</h1>
+    <p>Discover the World of Fashion</p>
+    <a href="#gallery" class="btn">Explore Collection</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to FASHIONISTA – your go-to place for the latest trends, bold looks, and timeless styles. 
+      Our passion is to bring you fashionable designs that inspire confidence and creativity. 
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Collection</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Fashion 1">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Fashion 2">
+      <img src="https://images.unsplash.com/photo-1520975922071-a14d8e1c8f8d" alt="Fashion 3">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" alt="Fashion 4">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: fashionista@example.com</p>
+    <p>Instagram: @fashionista</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 FASHIONISTA | Designed with ❤️
+  </footer>
+
+</body>
+</html>
